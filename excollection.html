@@ -1,0 +1,17 @@
+---
+layout: default
+title: Comparisons
+---
+<h1>Comparisons</h1>
+
+<ul>
+  {% for excollection in site.excollections %}
+    <li>
+      <h2>{{ excollection.title }}</h2>
+      <h3>{{ excollection.source1 }}</h3>
+      <h3>{{ excollection.source2 }}</h3>
+      <h3>{{ excollection.source3 }}</h3>
+      <p>{{ excollection.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>

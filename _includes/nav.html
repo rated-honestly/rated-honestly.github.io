@@ -1,0 +1,18 @@
+<nav>
+  <!--
+  {% for item in site.data.nav %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}style="color: #1F499E;"{% endif %}>
+      {{ item.name }}
+    </a>
+  {% endfor %}
+  -->
+  {% for item in site.data.nav %}
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="znav"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+
+  <div>
+    <a href="mailto:{{ site.email }}" class="link-email">Email</a>
+    <a href="https://github.com/{{ site.github }}" class="link-github">GitHub</a>
+  </div>
+
+</nav>

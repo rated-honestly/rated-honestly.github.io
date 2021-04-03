@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+<h2>{{ page.source }}</h2>
+<p>{{ page.date | date_to_string }} - {{ site.author }}</p>
+
+<!-- Filter example from https://jekyllrb.com/docs/step-by-step/09-collections/
+<p>
+  {% assign source = site.excollections | where: 'source1', page.source | first %}
+  {% if excollection %}
+    - <a href="{{ excollection.url }}">{{ excollection.name }}</a>
+  {% endif %}
+</p>
+-->
+
+{{ content }}

@@ -1,0 +1,100 @@
+###################################################################
+# BASICS
+title: Rated-Honestly
+description: Successes and Failures, Rated Honestly
+url: "https://rated-honestly.github.io/rated-honestly.github.io/"
+author: "Chantel Gaudet"
+github: rated-honestly
+email: cgaudet@u.rochester.edu
+
+exclude: ["README.md", "LICENSE", ".gitignore"]
+
+timezone: America/Chicago
+
+permalink: pretty
+
+###################################################################
+# I LEARNED THE FOLLOWING FROM https://jekyllrb.com/docs/step-by-step
+
+# Define collections
+collections:
+  excollections:
+    output: true # gave each .md a page
+
+# Define defaults for layouts 
+# (https://jekyllrb.com/docs/step-by-step/09-collections/)
+defaults:
+  # Example collection stuff:
+  - scope:
+      path: ""
+      type: "excollections"
+    values:
+      layout: "excollection"
+  # Blog posts:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  # Other:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Based on: https://jekyllrb.com/docs/step-by-step/10-deployment/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+
+###################################################################
+
+# Table of Contents
+toc: true
+toc_label: "Table of Contents"
+toc_icon: "list-ul"
+toc_sticky: true
+toc_levels: 1..3
+
+
+
+###################################################################
+
+# Social: Author
+about:
+  - name: "Email"
+    username: cgaudet@u.rochester.edu
+    icon: "fas fa-fw fa-envelope-square"
+    url: "mailto:cgaudet@u.rochester.edu"
+    class: email
+  - name: "LinkedIn"
+    username: chantelgaudet
+    icon: "fab fa-fw fa-linkedin"
+    url: "https://www.linkedin.com/in/chantelgaudet"
+    class: linkedin
+  - name: "Facebook"
+    username: chantel.gaudet
+    icon: "fab fa-fw fa-facebook-square"
+    url: "https://www.facebook.com/chantel.gaudet/"
+    class: facebook
+  - name: "Instagram"
+    username: crgaud
+    icon: "fab fa-fw fa-instagram"
+    url: "https://instagram.com/crgaud"
+    class: intagram
+
+# Social: Blog
+blog:
+  - name: "GitHub"
+    username: rated-honestly
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/rated-honestly"
+    class: github
+  - name: "Instagram"
+    username: rated-honestly
+    icon: "fab fa-fw fa-instagram"
+    url: "https://instagram.com/rated-honestly"
+    class: intagram
+    

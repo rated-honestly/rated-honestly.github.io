@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Chantel Gaudet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title | site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css"> /* made from .scss by Jekyll */
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/b8a9c2d5ab.js" crossorigin="anonymous"></script>
+
+     <!-- Next 2 lines are for Ruby gems, https://jekyllrb.com/docs/step-by-step/10-deployment/ -->
+    {% feed_meta %}
+    {% seo %} 
+  </head>
+
+  <body>
+    
+    {% include nav.html %}
+    
+    <h1>{{ page.title }}</h1>
+    <section>{{ content }}</section>
+    
+    {% include footer.html %}
+
+  </body>
+</html>

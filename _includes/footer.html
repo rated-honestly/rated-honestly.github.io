@@ -1,0 +1,32 @@
+
+<footer>
+
+<li>
+  <a href="mailto:{{ about.email }}">
+    <meta itemprop="email" content="{{ about.email }}" />
+    <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i>
+    <span class="label">{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span>
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/{{ about.linkedin }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>
+    <span class="label">LinkedIn</span>
+  </a>
+</li>
+<li>
+  <a href="https://www.facebook.com/{{ about.facebook }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+    <i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i>
+    <span class="label">Facebook</span>
+  </a>
+</li>
+<li>
+  <a href="https://github.com/{{ blog.github }}" itemprop="sameAs" rel="nofollow noopener noreferrer">
+    <i class="fab fa-fw fa-github" aria-hidden="true"></i>
+    <span class="label">GitHub</span>
+  </a>
+</li>
+
+<div>© {{ site.author }} {{'now' | date: '%Y' }}, unless otherwise noted.</div>
+
+</footer>
