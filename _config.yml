@@ -42,11 +42,11 @@ defaults:
     values:
       layout: "default"
 
-# Based on: https://jekyllrb.com/docs/step-by-step/10-deployment/
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+## Based on: https://jekyllrb.com/docs/step-by-step/10-deployment/
+#plugins:
+#  - jekyll-feed
+#  - jekyll-sitemap
+#  - jekyll-seo-tag
 
 
 ###################################################################
