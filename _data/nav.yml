@@ -1,11 +1,7 @@
 - name: Home
   link: /
-- name: About Me
+- name: About
   link: /about.html
-- name: Recipes
-  link: /recipes.html
-- name: Comparisons
-  link: /comparisons.html
-- name: Example of a Collection
-  link: /excollection.html
+- name: Ratings
+  link: /Ratings.html
   
